@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kurodan47-crypto.github.io/vrchat-kaihen-error/sitemap.xml
