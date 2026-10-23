@@ -1,0 +1,11 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gesture Layer needs valid mask on first animator layer（手のマスクが無い）｜VRChat改変エラー辞典</title><meta name="description" content="VRChat改変で「Gesture Layer needs valid mask on first animator layer（手のマスクが無い）」になった時の意味・原因・直し方を日本語で。手の形を動かすアニメーター（Gestureレイヤ"><link rel="canonical" href="https://kurodan47-crypto.github.io/vrchat-kaihen-error/gesture-mask/">
+<meta property="og:title" content="Gesture Layer needs valid mask on first animator layer（手のマスクが無い）｜VRChat改変エラー辞典"><meta property="og:description" content="VRChat改変で「Gesture Layer needs valid mask on first animator layer（手のマスクが無い）」になった時の意味・原因・直し方を日本語で。手の形を動かすアニメーター（Gestureレイヤ"><meta property="og:type" content="article">
+<link rel="stylesheet" href="../style.css"></head><body><main><div class="crumb"><a href="../">VRChat改変エラー辞典</a></div><h1>Gesture Layer needs valid mask on first animator layer（手のマスクが無い）</h1>
+<p>画面に出る文字：</p><div class="code">Gesture Layer needs valid mask on first animator layer</div>
+<h2>意味</h2><p>手の形を動かすアニメーター（Gestureレイヤー）を差し替えたとき、1段目のレイヤーに「手だけ動かす」マスクが入っていない状態です。</p>
+<h2>よくある原因</h2><ul class="list"><li>ポーズ・手のギミックを入れて、Gestureのアニメーターを自分のものに差し替えた</li><li>アニメーターを複製・作り直したときにマスクが外れた</li></ul>
+<h2>直し方</h2><ol><li>Animatorウィンドウで、Avatar Descriptor の Gesture に入っているアニメーターを開く</li><li>一番上のレイヤーの歯車を押す</li><li>Mask に「vrc_HandsOnly」（VRChat SDKに入っています）を入れる</li></ol>
+<p>直す前に、プロジェクトのフォルダを丸ごと複製しておくと安全です。</p><div class="cta"><b>自分のプロジェクトで原因を探すなら</b>Unityのメニューから「診断する」を押すだけで、原因と直し方を日本語で一覧にする無料の道具があります。<br>この症状では：1段目のマスクが無いかを調べ、有料版なら1クリックで vrc_HandsOnly を入れます。<br><a class="btn" href="https://kaihen-otasuke.booth.pm/items/9023883">改変おたすけ診断（無料版あり）</a></div>
+<p><a href="../">ほかのエラーを見る</a></p><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Gesture Layer needs valid mask on first animator layer（手のマスクが無い）はどう直す？", "acceptedAnswer": {"@type": "Answer", "text": "1. Animatorウィンドウで、Avatar Descriptor の Gesture に入っているアニメーターを開く 2. 一番上のレイヤーの歯車を押す 3. Mask に「vrc_HandsOnly」（VRChat SDKに入っています）を入れる"}}]}</script>
+<footer>VRChat改変エラー辞典（改変おたすけ工房）・最終更新 2026-10-23・VRChat公式の情報ではありません</footer></main></body></html>
